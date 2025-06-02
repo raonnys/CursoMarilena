@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Escolher e Combinar Acessórios - Marilena Acessórios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <h1 class="logo__text">Marilena Acessórios</h1>
+                    <span class="logo__tagline">Valorize seu estilo</span>
+                </div>
+                <nav class="nav">
+                    <a href="#curso" class="nav__link">Curso</a>
+                    <a href="#combinador" class="nav__link">Combinador</a>
+                    <a href="#produtos" class="nav__link">Produtos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="curso">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h2 class="hero__title">Como Escolher e Combinar Acessórios para Valorizar Seu Estilo</h2>
+                    <p class="hero__subtitle">Uma parceria Marilena Acessórios</p>
+                    <p class="hero__description">Aprenda a escolher e combinar acessórios como uma profissional. Descubra seu estilo pessoal e transforme qualquer look com as técnicas certas.</p>
+                    <button class="btn btn--primary btn--lg hero__cta">Comece Agora Grátis</button>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__accessories">
+                        <div class="accessory-icon accessory-icon--earring"></div>
+                        <div class="accessory-icon accessory-icon--necklace"></div>
+                        <div class="accessory-icon accessory-icon--bracelet"></div>
+                        <div class="accessory-icon accessory-icon--ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulos do Curso -->
+    <section class="modules">
+        <div class="container">
+            <h2 class="modules__title">Módulos do Curso</h2>
+            <div class="progress-bar">
+                <div class="progress-bar__fill" id="courseProgress"></div>
+            </div>
+            <div class="modules__grid" id="modulesGrid">
+                <!-- Módulos serão inseridos via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Combinador de Acessórios -->
+    <section class="combinator" id="combinador">
+        <div class="container">
+            <h2 class="combinator__title">Combinador de Acessórios</h2>
+            <p class="combinator__subtitle">Teste diferentes combinações e descubra seu estilo</p>
+            
+            <div class="combinator__filters">
+                <label class="form-label">Filtrar por ocasião:</label>
+                <div class="filter-buttons">
+                    <button class="btn btn--outline filter-btn active" data-filter="todos">Todos</button>
+                    <button class="btn btn--outline filter-btn" data-filter="trabalho">Trabalho</button>
+                    <button class="btn btn--outline filter-btn" data-filter="casual">Casual</button>
+                    <button class="btn btn--outline filter-btn" data-filter="festa">Festa</button>
+                    <button class="btn btn--outline filter-btn" data-filter="romântico">Romântico</button>
+                </div>
+            </div>
+
+            <div class="combinator__content">
+                <div class="accessories-panel">
+                    <div class="accessories-category" data-category="brincos">
+                        <h3>Brincos</h3>
+                        <div class="accessories-grid" id="brincosGrid"></div>
+                    </div>
+                    <div class="accessories-category" data-category="colares">
+                        <h3>Colares</h3>
+                        <div class="accessories-grid" id="colaresGrid"></div>
+                    </div>
+                    <div class="accessories-category" data-category="pulseiras">
+                        <h3>Pulseiras</h3>
+                        <div class="accessories-grid" id="pulseirasGrid"></div>
+                    </div>
+                    <div class="accessories-category" data-category="aneis">
+                        <h3>Anéis</h3>
+                        <div class="accessories-grid" id="aneisGrid"></div>
+                    </div>
+                </div>
+
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <div class="avatar__head"></div>
+                        <div class="avatar__body"></div>
+                        <div class="avatar__accessories">
+                            <div class="avatar__earrings" id="avatarEarrings"></div>
+                            <div class="avatar__necklace" id="avatarNecklace"></div>
+                            <div class="avatar__bracelets" id="avatarBracelets"></div>
+                            <div class="avatar__rings" id="avatarRings"></div>
+                        </div>
+                    </div>
+                    <div class="avatar-controls">
+                        <button class="btn btn--secondary" id="clearLook">Limpar Look</button>
+                        <button class="btn btn--primary" id="saveLook">Salvar Combinação</button>
+                        <button class="btn btn--outline" id="suggestLook">Sugestão Automática</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section class="products" id="produtos">
+        <div class="container">
+            <h2 class="products__title">Produtos em Destaque</h2>
+            <p class="products__subtitle">Aplique o conhecimento do curso com nossos acessórios</p>
+            <div class="products__grid" id="productsGrid">
+                <!-- Produtos serão inseridos via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>Marilena Acessórios</h3>
+                    <p>Transformando looks desde 2020</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Curso</h4>
+                        <a href="#curso">Módulos</a>
+                        <a href="#combinador">Combinador</a>
+                        <a href="#produtos">Produtos</a>
+                    </div>
+                    <div class="footer__column">
+                        <h4>Loja</h4>
+                        <a href="#" target="_blank">Catálogo</a>
+                        <a href="#" target="_blank">Novidades</a>
+                        <a href="#" target="_blank">Promoções</a>
+                    </div>
+                    <div class="footer__column">
+                        <h4>Contato</h4>
+                        <a href="mailto:contato@marilena.com">contato@marilena.com</a>
+                        <a href="tel:+5511999999999">(11) 99999-9999</a>
+                        <a href="#" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Marilena Acessórios. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para Módulos -->
+    <div class="modal" id="moduleModal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 id="modalTitle"></h3>
+                <button class="modal__close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal__body" id="modalBody">
+                <!-- Conteúdo do módulo -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Combinação Salva -->
+    <div class="modal" id="saveModal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Combinação Salva!</h3>
+                <button class="modal__close" id="closeSaveModal">&times;</button>
+            </div>
+            <div class="modal__body">
+                <p>Sua combinação foi salva com sucesso! Continue explorando novas possibilidades.</p>
+                <button class="btn btn--primary" id="continueCombining">Continuar Combinando</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
